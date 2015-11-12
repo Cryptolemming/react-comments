@@ -16,12 +16,35 @@
         render: function() {
           return (
             <div className='commentbox'>
-              I am a Comment CommentBox.
-            </div>;
+              <h1>Comments</h1>
+              <CommentList />
+              <CommentForm />
+            </div>
           );
         }
       });
+
       ReactDOM.render(<CommentBox />, document.getElementById('content'));
+
+      const CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className='commentlist'>
+              I am a CommentList.
+            </div>
+          );
+        }
+      });
+
+      const CommentForm = react.createClass({
+        render: function() {
+          return (
+            <div className='commentform'>
+              I am a CommentForm.
+            </div>
+          );
+        }
+      });
     </script>
   </body>
 </html>
