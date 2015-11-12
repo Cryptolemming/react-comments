@@ -1,14 +1,10 @@
 [
     {
-        "author": "Pete Hunt",
-        "text": "Hey there!"
+        "author": "Mario", 
+        "text": "It's a me, Mario"
     },
     {
-        "author": "Paul O’Shannessy",
-        "text": "React is *great*!"
-    },
-    {
-        "author": "Ali",
-        "text": "indeed it is!"
+        "author": "Luigi", 
+        "text": "I don't have a catchphrase :("
     }
 ]
