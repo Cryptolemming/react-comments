@@ -28,7 +28,11 @@
             }.bind(this)
           });
         },
-        handleCommentSubmit() {
+        handleCommentSubmit: function(comment) {
+          // update the comments in the list UI before actually sending data to server
+          var comments = this.state.data;
+          var newComments = comments.concat([comment]);
+          this.setState({data: newComments});
           $.ajax({
             url: this.props.url,
             dataType: 'json',
@@ -91,12 +95,12 @@
           this.refs.author.value = '';
           this.refs.author.text = '';
           return;
-        }
+        },
         render: function() {
           return (
-            <form className='commentForm'>
+            <form className='commentForm' onSubmit={this.handleSubmit}>
               <input type='text' placeholder='Your name' ref='author' />
-              <input type='text' placeholder='Say something' ref-'text' />
+              <input type='text' placeholder='Say something' ref='text' />
               <input type='submit' value='Post' />
             </form>
           );

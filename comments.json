@@ -1,10 +1,14 @@
 [
     {
-        "author": "Mario", 
+        "author": "Mario",
         "text": "It's a me, Mario"
     },
     {
-        "author": "Luigi", 
+        "author": "Luigi",
         "text": "I don't have a catchphrase :("
+    },
+    {
+        "author": "Ali",
+        "text": "Test"
     }
 ]
